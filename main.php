@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php
-        
-        $red = rand(0,255);
-        $blue = rand(0,255);
-        $green = rand(0,255);
-        
-        
-        
-        
-        
-        ?>
-        <style>
-        
-            body{
-              <?php echo "background:rgb($red,$green,$blue);"
-              
-          
-               
-              
-              
-  
-              ?>
-                
-            }
-        </style>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="/cst336/cst338-sp18-hm2/style.css">
     </head>
-    
+
+       
       
     
     <body>
            <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-          Name: <input type="text" name="name">
+         <h1> Are you feeling funny or interesting ? </h1>
+         <p>Type: Interesting or Fun fact</p>
+        <img src="http://gph.to/2o9mrWl" alt="cat1" height="100" width="60">
+         <p> Please enter wether you want to know 2 Interesting facts or if you want to know some fun facts!<p>
+         <input type="text" name="name">
           <input type="submit">
         </form>
+        
+       
         
         <?php
        
         $userChoice = "";
         
-        echo "Hello and Welcome to Interesting and fun facts";
+        
        
         echo "<br>";
-        echo "Please enter wether you want to know 2 Interesting facts or if you want to know some fun facts!";
          echo "<br>";
-        echo " Type: Interesting or Fun fact";
          echo "<br>";
         echo "<br>";
       
+      
+    
+
       
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
@@ -83,22 +68,55 @@
         $rand_keys = array_rand($funFact, 2);
         echo $funFact[$rand_keys[0]]. "\n";
         echo "<br>";
+        echo "<br>";
+        
+        
         echo $funFact[$rand_keys[1]]. "\n";
-      }  
-  
-  else
+      } 
+      
+      
+     
+
     if (empty($userChoice)) {
          echo "<br>";
         echo "Empty is not a valid input";
-            }
-      }
-       
-  
+        
+        
+ 
+    } 
+      
+}
+
+
+
+
+
+$i = 1;
+while($i <= 5){
+  $x = 1;
+  while($x <= 5){
+    echo" *". " ";
+    $x++;
+  }
+  echo "<br/>";
+  $i++;
+}
        ?>
     
-    
-    
+
     
 </body>
+<footer>
+    
+
+       <img src="/cst336/cst338-sp18-hm2/img/cat2.jpg" class = "cat" alt="cat2" height="300" width="300">
+
+
+      
+
+    @csumb 
+    Maria Evelin Anda-Murillo
+    spring 2018
+</footer>
     
 </html>

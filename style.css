@@ -1,0 +1,22 @@
+input,select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #2f8d9e;
+  
+}
+.cat {
+ position: absolute;
+    right: 100px;
+    top: 300px;  
+}
+footer { 
+    size: small;
+    
+}
