@@ -73,8 +73,6 @@
         
         echo $funFact[$rand_keys[1]]. "\n";
       } 
-      
-      
      
 
     if (empty($userChoice)) {
